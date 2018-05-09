@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nick's Personal Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="vendor/styles/icomoon.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Cabin|Comfortaa|Exo+2" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Nick Asmussen</h1>
+      <div class="nav-icon">
+        <span class="icon-menu"></span>
+        <span class="icon-cross"></span>
+      </div>
+      <nav class="main-nav">
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/resume">Resume</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/nick-asmussen/">
+            <span class="icon-linkedin"></span> LinkedIn
+          </a></li>
+          <li><a href="https://github.com/nickjaz">
+            <span class="icon-github"></span> GitHub
+          </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="nav-content home">
+
+        <div class="hero-image">
+          <img src="http://via.placeholder.com/700x550">
+          <h1>Welcome to the darkside of the moon</h1>
+        </div>
+        <div class= "quick-resume">
+          <h2>Where I've been</h2>
+          <div class="square computer">
+            <div class="inner-square">
+              <h3>Programmer</h3>
+              <p>Designing websites for your screens</p>
+            </div>
+          </div>
+          <div class="square food">
+            <div class="inner-square">
+              <h3>Chef</h3>
+              <p>Handcrafted art for your consumption</p>
+            </div>
+          </div>
+          <div class="square guitar">
+            <div class="inner-square">
+              <h3>Musician</h3>
+              <p>Making music for your ears</p>
+            </div>
+          </div>
+
+          <a class="false-button" href="/resume">More Resume</a>
+        </div>
+
+        <div class= "quick-portfolio">
+          <h2>What I've been doing</h2>
+          <div class="square">
+            <div class="inner-square">
+              <h3>Selfie Spots</h3>
+              <p>Discover the best selfie spots around the world</p>
+            </div>
+          </div>
+          <div class="square">
+            <div class="inner-square">
+              <h3>Parkify</h3>
+              <p>Solving the city's parking problems by renting your empty space</p>
+            </div>
+          </div>
+
+          <a class="false-button" href="/portfolio">More Portfolio</a>
+        </div>
+
+        <div class= "quick-about">
+          <h2>Who I am</h2>
+          <p>I am a full-stack javascript software developer with a background in management. I am implementing my eye for design using my proficient front-end skills to design enterprise level web pages.</p>
+
+          <a class="false-button" href="/about">More About Me</a>
+        </div>
+
+        <div class= "quick-contact">
+          <h2>How to reach me</h2>
+          <div class="square">
+            <div class="inner-square">
+              <h3>Phone Number</h3>
+              <p>425-829-9171</p>
+            </div>
+          </div>
+          <div class="square">
+            <div class="inner-square">
+              <h3>Email</h3>
+              <p>nick.asmussen1@gmail.com</p>
+            </div>
+          </div>
+
+          <a class="false-button" href="/contact">More Contact Info</a>
+        </div>
+      </section>
+
+      <section class="nav-content resume">
+        <!-- TODO: fill with resume content -->
+      </section>
+
+      <section class="nav-content portfolio">
+        <h2>Portfolio</h2>
+        <div class="square project">
+          <h3>Selfie Spots</h3>
+          <img src="" alt="">
+          <p>Discover the best selfie spots around the world.</p>
+        </div>
+        <div class="square project">
+          <h3>Parkify</h3>
+          <img src="" alt="">
+          <p>Solving the city's parking problems by renting your empty space.</p>
+        </div>
+      </section>
+
+      <section class="nav-content about">
+        <h2>About</h2>
+        <p>I am a full-stack javascript software developer with a background in management. I am implementing my eye for design using my proficient front-end skills to design enterprise level web pages. I learned my passion for software as a chef being creative and making things people can enjoy. Instead of feeding people food now I’m feeding people code.</p>
+      </section>
+
+      <section class="nav-content contact">
+        <h2>Contact</h2>
+        <a href="https://www.linkedin.com/in/nick-asmussen/">Nick Asmussen</a>
+        <p>Phone:
+          <a href="tel:+14258299171">425-829-9171</a>
+        </p>
+        <p>Email:
+          <span>nick.asmussen1@gmail.com</span>
+        </p>
+
+        <form class="email-container" action="mailto:nick.asmussen1@gmail.com" method="get">
+          <input type="hidden" value="Message Title">
+          <textarea name="body" rows="8" cols="40"></textarea>
+          <input class="false-button submit" type="submit" value="Send">
+        </form>
+      </section>
+    </main>
+
+    <footer class="nav-content">
+      <h2>The bottom line</h2>
+    </footer>
+  </body>
+
+  <script src="/vendor/scripts/jquery.js"></script>
+  <script src="/vendor/scripts/page.js"></script>
+  <script src="/scripts/view/nav.js"></script>
+  <script src="/scripts/view/nav-display.js"></script>
+  <script src="/scripts/controller/routes.js"></script>
+</html>
